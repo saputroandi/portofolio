@@ -1,0 +1,12 @@
+:root {
+  --light-green: #28ffbf;
+  --lighter-green: #bcffb9;
+  --peach: #f5fdb0;
+  --cream: #f7e6ad;
+  --stabilo: #7cfc00;
+
+  --border: #04009a;
+
+  --box-shadow-big: 6px 6px rgba(0, 0, 0, 0.6);
+  --box-shadow-small: 3px 3px rgba(0, 0, 0, 0.1);
+}
