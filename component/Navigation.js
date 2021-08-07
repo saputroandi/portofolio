@@ -9,9 +9,9 @@ export default function Navigation() {
   };
 
   return (
-    <div>
-      <div className="navigation">
-        <div className="navigation-container container">
+    <div className="navigation">
+      <div className="navigation-style container">
+        <div className="navigation-container">
           <div className="navigation-name">
             <p>Andi</p>
           </div>
