@@ -1,0 +1,44 @@
+.biograph {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.biograph-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 100%;
+  padding: 1rem;
+  margin: 1.25rem auto;
+  gap: 2rem;
+  background-color: var(--light-green);
+  box-shadow: var(--box-shadow-small);
+  border-radius: 0.3rem;
+}
+
+.biograph-content-header {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.biograph-content {
+  text-align: justify;
+  font-weight: 500;
+}
+
+.biograph-content > p > span {
+  margin-left: 3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .biograph-content-header {
+    font-size: 3.5em;
+  }
+  .biograph-content {
+    font-size: 1.3em;
+  }
+}

@@ -1,14 +1,9 @@
-.navigation {
-  position: sticky;
-  top: 0;
-}
-
 .navigation-style {
   padding: 1rem;
   background-color: var(--light-green);
   margin: 1.25rem auto 0 auto;
-  border-radius: 0.5rem;
-  box-shadow: var(--box-shadow-big);
+  border-radius: 0.3rem;
+  box-shadow: var(--box-shadow-small);
 }
 
 .navigation-container {

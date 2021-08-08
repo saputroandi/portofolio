@@ -1,0 +1,46 @@
+.language {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.language-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 100%;
+  padding: 1rem;
+  margin: 1.25rem auto;
+  gap: 2rem;
+  background-color: var(--light-green);
+  box-shadow: var(--box-shadow-small);
+  border-radius: 0.3rem;
+}
+
+.language-content-header {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.language-content {
+  width: inherit;
+  padding: 0 1rem;
+  text-align: justify;
+  font-weight: 500;
+}
+
+.timeline-content {
+  font-size: 1.3em;
+  margin: 0.75rem 0;
+}
+
+.language-chart {
+  display: block;
+  height: 24rem;
+}
+
+@media only screen and (min-width: 768px) {
+}

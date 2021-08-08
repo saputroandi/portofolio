@@ -1,0 +1,47 @@
+.timeline {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.timeline-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 100%;
+  padding: 1rem;
+  margin: 1.25rem auto;
+  background-color: var(--light-green);
+  box-shadow: var(--box-shadow-small);
+  border-radius: 0.3rem;
+}
+
+.timeline-content {
+  width: inherit;
+  padding: 0 1rem;
+}
+
+.timeline-content-header {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.timeline-content > p {
+  text-align: justify;
+  font-weight: 500;
+  font-size: 0.8em;
+  margin-top: 0.3rem;
+}
+
+.timeline-content > p :first-child {
+  font-size: 1.8em;
+}
+
+@media only screen and (min-width: 768px) {
+  .timeline-content > p {
+    font-size: 1em;
+  }
+}

@@ -9,6 +9,51 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
   margin: 1.25rem auto;
-  /* background-color: lawngreen; */
+}
+
+.hero-image {
+  margin: 3rem;
+  border-radius: 50%;
+  width: 15.625rem;
+  height: 15.625rem;
+  background-image: url('../../public/img/monyet.jpg');
+  background-position: center;
+  background-size: cover;
+  box-shadow: var(--box-shadow-small);
+}
+
+.hero-name {
+  font-size: 3em;
+  font-weight: 700;
+  text-shadow: var(--box-shadow-small);
+  text-align: center;
+}
+
+.hero-position {
+  font-size: 1.4em;
+  font-weight: 500;
+  text-shadow: var(--box-shadow-small);
+  text-align: center;
+}
+
+.hero-current-position {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-style {
+    flex-direction: row;
+  }
+
+  .hero-name {
+    font-size: 6em;
+    text-align: justify;
+  }
+
+  .hero-position {
+    font-size: 2em;
+    text-align: justify;
+  }
 }

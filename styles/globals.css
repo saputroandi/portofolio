@@ -3,6 +3,9 @@
 @import url('../public/css/animation.css');
 @import url('../public/css/navigation.css');
 @import url('../public/css/hero.css');
+@import url('../public/css/biograph.css');
+@import url('../public/css/timeline.css');
+@import url('../public/css/language.css');
 
 html,
 body {
@@ -45,8 +48,23 @@ a {
   position: inherit;
   top: 0;
   width: 100%;
-  height: 100vh;
-  animation-duration: 5s;
+  height: 100%;
+  animation-duration: 8s;
+  animation-name: cloud-animation;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-size: cover;
+  background-repeat: round;
+  z-index: -1;
+}
+.index-container::before {
+  content: '';
+  background-image: url('../public/img/cloud.png');
+  position: inherit;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation-duration: 15s;
   animation-name: cloud-animation;
   animation-iteration-count: infinite;
   animation-direction: normal;
