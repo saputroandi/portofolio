@@ -1,7 +1,6 @@
 .timeline {
   display: flex;
   align-items: center;
-  width: 100vw;
   height: 100vh;
 }
 
@@ -29,19 +28,15 @@
   font-weight: 500;
 }
 
-.timeline-content > p {
+.timeline-content {
   text-align: justify;
+  font-size: 1.3em;
   font-weight: 500;
-  font-size: 0.8em;
-  margin-top: 0.3rem;
-}
-
-.timeline-content > p :first-child {
-  font-size: 1.8em;
+  margin: 0.75rem 0;
 }
 
 @media only screen and (min-width: 768px) {
-  .timeline-content > p {
+  /* .timeline-content > p {
     font-size: 1em;
-  }
+  } */
 }

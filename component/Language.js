@@ -1,22 +1,41 @@
 import React from 'react';
+import { Bar } from 'react-chartjs-2';
 
 export default function Language({ repos }) {
   // reduce languages data from github
   const languages = repos.map((repo) => repo.language);
   const chartData = languages.reduce(
-    (arrayLanguage, currentLanguage, index) => {
-      if (!currentLanguage) {
-        arrayLanguage['Other'] = 1;
-      } else if (!arrayLanguage[currentLanguage]) {
-        arrayLanguage[currentLanguage] = 1;
-      } else {
-        arrayLanguage[currentLanguage] = arrayLanguage[currentLanguage] + 1;
+    (accLanguages, currentLanguages, index) => {
+      if (!currentLanguages) currentLanguages = 'Other';
+
+      let language = accLanguages.some((obj) => obj.x === currentLanguages);
+
+      if (!language) accLanguages.push({ x: `${currentLanguages}`, y: 1 });
+
+      if (language) {
+        let indexOfObj = accLanguages.findIndex(
+          (obj) => obj.x === currentLanguages
+        );
+        accLanguages[indexOfObj].y = accLanguages[indexOfObj].y + 1;
       }
-      return arrayLanguage;
+
+      return accLanguages;
     },
-    {}
+    []
   );
-  console.log(chartData);
+
+  const data = {
+    // labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    datasets: [
+      {
+        label: 'Language based on my github repo',
+        data: chartData,
+        backgroundColor: 'rgba(17, 50, 77, 0.8)',
+        borderColor: 'rgba(17, 50, 77, 1)',
+        borderWidth: 1,
+      },
+    ],
+  };
 
   return (
     <div className="language">
@@ -26,7 +45,14 @@ export default function Language({ repos }) {
         </div>
 
         <div className="language-content">
-          <p>your chart here</p>
+          <Bar
+            data={data}
+            width={250}
+            height={290}
+            options={{
+              maintainAspectRatio: false,
+            }}
+          />
         </div>
       </div>
     </div>
