@@ -28,7 +28,7 @@ export default function Language({ repos }) {
     // labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
     datasets: [
       {
-        label: 'Language based on my github repo',
+        label: `The language I use`,
         data: chartData,
         backgroundColor: 'rgba(17, 50, 77, 0.8)',
         borderColor: 'rgba(17, 50, 77, 1)',
@@ -51,8 +51,14 @@ export default function Language({ repos }) {
             height={290}
             options={{
               maintainAspectRatio: false,
+              legend: {
+                display: false,
+              },
             }}
           />
+        </div>
+        <div>
+          <p>The language i use, based on my Github repo</p>
         </div>
       </div>
     </div>

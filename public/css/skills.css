@@ -1,13 +1,14 @@
-.language {
+.skills {
   display: flex;
   align-items: center;
 }
 
-.language-style {
+.skills-style {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 90%;
   width: 100%;
   padding: 1rem;
   margin: 1.25rem auto;
@@ -17,18 +18,29 @@
   border-radius: 0.3rem;
 }
 
-.language-content-header {
+.skills-header {
   font-size: 2em;
   font-weight: var(--semi-bold);
 }
 
-.language-content {
-  width: inherit;
-  padding: 0 1rem;
-  text-align: justify;
-  font-weight: var(--semi-bold);
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.language-chart {
-  display: block;
+.skills-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-headers-data {
+  font-size: 1.4em;
+  font-weight: var(--semi-bold);
+  margin-bottom: 0.2rem;
+}
+
+.skills-content-data {
+  margin: 0.1rem 0;
 }

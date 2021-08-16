@@ -7,6 +7,11 @@
 
   --border: #04009a;
 
+  --bold: 700;
+  --semi-bold: 600;
+  --regular: 400;
+  --light: 300;
+
   --box-shadow-big: 6px 6px rgba(0, 0, 0, 0.6);
   --box-shadow-small: 3px 3px rgba(0, 0, 0, 0.1);
 }

@@ -25,13 +25,13 @@
 
 .timeline-content-header {
   font-size: 2em;
-  font-weight: 500;
+  font-weight: var(--semi-bold);
 }
 
 .timeline-content {
   text-align: justify;
   font-size: 1.3em;
-  font-weight: 500;
+  font-weight: var(--semi-bold);
   margin: 0.75rem 0;
 }
 

@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
 @import url('../public/css/variable.css');
 @import url('../public/css/animation.css');
 @import url('../public/css/navigation.css');
 @import url('../public/css/hero.css');
 @import url('../public/css/biograph.css');
-@import url('../public/css/timeline.css');
+/* @import url('../public/css/timeline.css'); */
+@import url('../public/css/skills.css');
 @import url('../public/css/language.css');
 
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Nunito', sans-serif;
   background-color: #f5e8c7;
   /* border: 1px solid red; */
 }

@@ -4,6 +4,7 @@ export default function Hero() {
   return (
     <div className="hero">
       <div className="hero-style container">
+        {/* <div className="hero-profile"> */}
         <div className="hero-bacground"></div>
         <div className="hero-image"></div>
         <div className="hero-info">
@@ -17,6 +18,8 @@ export default function Hero() {
             <p>Currently i&apos;m working as Senior Production Operator</p>
           </div>
         </div>
+        {/* </div> */}
+        {/* <div className="hero-contact">Contact Me</div> */}
       </div>
     </div>
   );

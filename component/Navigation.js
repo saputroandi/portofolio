@@ -23,13 +23,10 @@ export default function Navigation() {
               <a href="#">Biograph</a>
             </div>
             <div className="navigation-button">
-              <a href="#">Timeline</a>
+              <a href="#">Capability</a>
             </div>
             <div className="navigation-button">
               <a href="#">Language</a>
-            </div>
-            <div className="navigation-button">
-              <a href="#">Contact</a>
             </div>
           </div>
           <div className="mobile-hamburger-icon" onClick={() => displayMenu()}>
@@ -54,13 +51,10 @@ export default function Navigation() {
               <a href="#">Biograph</a>
             </div>
             <div className="mobile-navigation-button">
-              <a href="#">Timeline</a>
+              <a href="#">Capability</a>
             </div>
             <div className="mobile-navigation-button">
               <a href="#">Language</a>
-            </div>
-            <div className="mobile-navigation-button">
-              <a href="#">Contact</a>
             </div>
           </div>
         </div>

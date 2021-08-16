@@ -2,7 +2,7 @@ import Biograph from '../component/Biograph';
 import Hero from '../component/Hero';
 import Language from '../component/Language';
 import Navigation from '../component/Navigation';
-import Timeline from '../component/Timeline';
+import Skills from '../component/skills';
 
 export async function getStaticProps(context) {
   const res = await fetch(`https://api.github.com/users/saputroandi/repos`);
@@ -18,7 +18,7 @@ export default function Home({ repos }) {
       <Navigation />
       <Hero />
       <Biograph />
-      <Timeline />
+      <Skills />
       <Language repos={repos} />
     </div>
   );

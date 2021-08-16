@@ -19,13 +19,13 @@
 }
 
 .biograph-content-header {
-  font-size: 3.5em;
-  font-weight: 500;
+  font-size: 2em;
+  font-weight: var(--semi-bold);
 }
 
 .biograph-content {
   text-align: justify;
-  font-weight: 500;
+  font-weight: var(--semi-bold);
   font-size: 1.2em;
 }
 
