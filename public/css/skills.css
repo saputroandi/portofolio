@@ -13,7 +13,7 @@
   padding: 1rem;
   margin: 1.25rem auto;
   gap: 2rem;
-  background-color: var(--light-green);
+  background-color: var(--grey);
   box-shadow: var(--box-shadow-small);
   border-radius: 0.3rem;
 }

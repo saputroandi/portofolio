@@ -1,6 +1,6 @@
 .navigation-style {
   padding: 1rem;
-  background-color: var(--light-green);
+  background-color: var(--grey);
   margin: 1.25rem auto 0 auto;
   border-radius: 0.3rem;
   box-shadow: var(--box-shadow-small);
@@ -33,7 +33,7 @@
   padding-bottom: 0.3rem;
   border-bottom-style: solid;
   border-bottom-width: 0.2rem;
-  border-bottom-color: var(--stabilo);
+  border-bottom-color: var(--dark-grey);
 }
 
 .mobile-hamburger-icon > span {
@@ -60,7 +60,7 @@
   padding: 0.25rem 0;
   width: inherit;
   z-index: 1;
-  background-color: var(--peach);
+  background-color: var(--grey);
   border-radius: 0.3rem;
   box-shadow: var(--box-shadow-big);
 }
@@ -79,7 +79,7 @@
 }
 
 .mobile-navigation-button:hover {
-  background-color: var(--light-green);
+  background-color: var(--light-grey);
   border-radius: 0.3rem;
 }
 

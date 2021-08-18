@@ -1,17 +1,19 @@
 :root {
-  --light-green: #deba9d;
-  --lighter-green: #bcffb9;
-  --peach: #f5fdb0;
-  --cream: #f7e6ad;
-  --stabilo: #7cfc00;
+  /* color theme */
+  --light-grey: #bdd2b6;
+  --grey: #a2b29f;
+  --dark-grey: #798777;
 
-  --border: #04009a;
+  /* border */
+  --border: #1c3337;
 
+  /* font weight */
   --bold: 700;
   --semi-bold: 600;
   --regular: 400;
   --light: 300;
 
+  /* shadow */
   --box-shadow-big: 6px 6px rgba(0, 0, 0, 0.6);
-  --box-shadow-small: 3px 3px rgba(0, 0, 0, 0.1);
+  --box-shadow-small: 3px 3px rgba(0, 0, 0, 0.2);
 }
