@@ -2,6 +2,7 @@ import Biograph from '../component/Biograph';
 import Hero from '../component/Hero';
 import Language from '../component/Language';
 import Navigation from '../component/Navigation';
+import ScrollButtonToTop from '../component/ScrollButtonToTop';
 import Skills from '../component/Skills';
 
 export async function getStaticProps(context) {
@@ -20,6 +21,7 @@ export default function Home({ repos }) {
       <Biograph />
       <Skills />
       <Language repos={repos} />
+      <ScrollButtonToTop />
     </div>
   );
 }

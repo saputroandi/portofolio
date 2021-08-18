@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
+import { Link } from 'react-scroll';
 
 export default function Navigation() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -20,13 +21,19 @@ export default function Navigation() {
               <a href="#">Me</a>
             </div>
             <div className="navigation-button">
-              <a href="#">Biograph</a>
+              <Link to="biograph" smooth={true} duration={1000}>
+                Biograph
+              </Link>
             </div>
             <div className="navigation-button">
-              <a href="#">Capability</a>
+              <Link to="skills" smooth={true} duration={1000}>
+                Capability
+              </Link>
             </div>
             <div className="navigation-button">
-              <a href="#">Language</a>
+              <Link to="language" smooth={true} duration={1000}>
+                Language
+              </Link>
             </div>
           </div>
           <div className="mobile-hamburger-icon" onClick={() => displayMenu()}>
@@ -48,13 +55,34 @@ export default function Navigation() {
               <a href="#">Me</a>
             </div>
             <div className="mobile-navigation-button">
-              <a href="#">Biograph</a>
+              <Link
+                to="biograph"
+                smooth={true}
+                duration={1000}
+                onClick={() => displayMenu()}
+              >
+                Biograph
+              </Link>
             </div>
             <div className="mobile-navigation-button">
-              <a href="#">Capability</a>
+              <Link
+                to="skills"
+                smooth={true}
+                duration={1000}
+                onClick={() => displayMenu()}
+              >
+                Capability
+              </Link>
             </div>
             <div className="mobile-navigation-button">
-              <a href="#">Language</a>
+              <Link
+                to="language"
+                smooth={true}
+                duration={1000}
+                onClick={() => displayMenu()}
+              >
+                Language
+              </Link>
             </div>
           </div>
         </div>

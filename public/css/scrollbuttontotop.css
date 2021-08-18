@@ -1,0 +1,14 @@
+.scroll {
+  display: inline-block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+}
+
+.scroll-icon {
+  width: 2rem;
+  background-color: rgba(121, 135, 119, 0.7);
+  border-radius: 50%;
+}

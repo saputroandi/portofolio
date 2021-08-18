@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Biograph() {
   return (
-    <div className="biograph">
+    <div className="biograph" id="biograph">
       <div className="biograph-style container">
         <div className="biograph-content-header">
           <p>Biograph</p>

@@ -38,7 +38,7 @@ export default function Language({ repos }) {
   };
 
   return (
-    <div className="language">
+    <div className="language" id="language">
       <div className="language-style container">
         <div className="language-content-header">
           <p>Language</p>
