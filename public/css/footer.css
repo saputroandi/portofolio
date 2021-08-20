@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  justify-items: center;
+}
+.footer-style {
+  padding: 1rem;
+  margin: 1.25rem auto;
+  background-color: var(--grey);
+  box-shadow: var(--box-shadow-small);
+  border-radius: 0.3rem;
+  text-align: center;
+  font-weight: var(--semi-bold);
+  font-size: 0.8em;
+}

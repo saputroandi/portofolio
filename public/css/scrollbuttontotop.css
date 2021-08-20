@@ -9,6 +9,6 @@
 
 .scroll-icon {
   width: 2rem;
-  background-color: rgba(121, 135, 119, 0.7);
+  background-color: var(--red-scroll-icon);
   border-radius: 50%;
 }

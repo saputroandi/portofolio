@@ -1,4 +1,5 @@
 import Biograph from '../component/Biograph';
+import Footer from '../component/Footer';
 import Hero from '../component/Hero';
 import Language from '../component/Language';
 import Navigation from '../component/Navigation';
@@ -21,6 +22,7 @@ export default function Home({ repos }) {
       <Biograph />
       <Skills />
       <Language repos={repos} />
+      <Footer />
       <ScrollButtonToTop />
     </div>
   );

@@ -18,20 +18,17 @@ export default function Navigation() {
           </div>
           <div className="navigation-list">
             <div className="navigation-button">
-              <a href="#">Me</a>
-            </div>
-            <div className="navigation-button">
-              <Link to="biograph" smooth={true} duration={1000}>
+              <Link to="biograph" smooth={true} duration={800}>
                 Biograph
               </Link>
             </div>
             <div className="navigation-button">
-              <Link to="skills" smooth={true} duration={1000}>
+              <Link to="skills" smooth={true} duration={800}>
                 Capability
               </Link>
             </div>
             <div className="navigation-button">
-              <Link to="language" smooth={true} duration={1000}>
+              <Link to="language" smooth={true} duration={800}>
                 Language
               </Link>
             </div>
@@ -52,13 +49,10 @@ export default function Navigation() {
         <div className="mobile-navigation container">
           <div className="mobile-navigation-list">
             <div className="mobile-navigation-button">
-              <a href="#">Me</a>
-            </div>
-            <div className="mobile-navigation-button">
               <Link
                 to="biograph"
                 smooth={true}
-                duration={1000}
+                duration={800}
                 onClick={() => displayMenu()}
               >
                 Biograph
@@ -68,7 +62,7 @@ export default function Navigation() {
               <Link
                 to="skills"
                 smooth={true}
-                duration={1000}
+                duration={800}
                 onClick={() => displayMenu()}
               >
                 Capability
@@ -78,7 +72,7 @@ export default function Navigation() {
               <Link
                 to="language"
                 smooth={true}
-                duration={1000}
+                duration={800}
                 onClick={() => displayMenu()}
               >
                 Language
