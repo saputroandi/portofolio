@@ -1,6 +1,6 @@
 .hero {
   /* width: 100vw; */
-  height: 80vh;
+  /* height: 80vh; */
 }
 
 .hero-style {
@@ -25,6 +25,13 @@
   border: 6px solid var(--border);
 }
 
+.hero-info-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 1rem;
+}
+
 .hero-name {
   font-size: 3em;
   font-weight: var(--bold);
@@ -43,6 +50,46 @@
   text-align: center;
 }
 
+.hero-contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hero-contact {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.hero-icon-phone {
+  background-image: url('../../public/img/telephone.png');
+  width: 1.2rem;
+  height: 1.2rem;
+  background-size: cover;
+}
+
+.hero-icon-email {
+  background-image: url('../../public/img/email.png');
+  width: 1.2rem;
+  height: 1.2rem;
+  background-size: cover;
+}
+
+.hero-icon-github {
+  background-image: url('../../public/img/github.png');
+  width: 1.2rem;
+  height: 1.2rem;
+  background-size: cover;
+}
+
+.hero-icon-telegram {
+  background-image: url('../../public/img/telegram.png');
+  width: 1.2rem;
+  height: 1.2rem;
+  background-size: cover;
+}
+
 @media only screen and (min-width: 768px) {
   .hero-style {
     flex-direction: row;
@@ -56,5 +103,14 @@
   .hero-position {
     font-size: 2em;
     text-align: justify;
+  }
+
+  .hero-current-position {
+    text-align: start;
+  }
+
+  .hero-contact-container {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

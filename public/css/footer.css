@@ -4,7 +4,8 @@
 }
 .footer-style {
   padding: 1rem;
-  margin: 1.25rem auto;
+  margin: 0 auto;
+  margin-bottom: 1.25rem;
   background-color: var(--grey);
   box-shadow: var(--box-shadow-small);
   border-radius: 0.3rem;

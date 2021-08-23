@@ -10,7 +10,8 @@
   align-items: center;
   width: 100%;
   padding: 1rem;
-  margin: 1.25rem auto;
+  margin: 0 auto;
+  margin-bottom: 1.25rem;
   gap: 2rem;
   background-color: var(--grey);
   box-shadow: var(--box-shadow-small);
