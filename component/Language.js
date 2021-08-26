@@ -1,5 +1,8 @@
 import React from 'react';
 import { Bar } from 'react-chartjs-2';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Language({ repos }) {
   // reduce languages data from github
@@ -37,8 +40,12 @@ export default function Language({ repos }) {
     ],
   };
 
+  useEffect(() => {
+    AOS.init({ duration: 500 });
+  }, []);
+
   return (
-    <div className="language" id="language">
+    <div data-aos="flip-right" className="language" id="language">
       <div className="language-style container">
         <div className="language-content-header">
           <p>Language</p>

@@ -6,7 +6,7 @@ import Navigation from '../component/Navigation';
 import ScrollButtonToTop from '../component/ScrollButtonToTop';
 import Skills from '../component/Skills';
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const res = await fetch(`https://api.github.com/users/saputroandi/repos`);
   const data = await res.json();
   return {

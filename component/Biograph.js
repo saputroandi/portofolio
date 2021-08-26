@@ -1,8 +1,15 @@
 import React from 'react';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Biograph() {
+  useEffect(() => {
+    AOS.init({ duration: 500 });
+  }, []);
+
   return (
-    <div className="biograph" id="biograph">
+    <div data-aos="flip-right" className="biograph" id="biograph">
       <div className="biograph-style container">
         <div className="biograph-content-header">
           <p>Biograph</p>

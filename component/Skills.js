@@ -1,8 +1,15 @@
 import React from 'react';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Skills() {
+  useEffect(() => {
+    AOS.init({ duration: 500 });
+  }, []);
+
   return (
-    <div className="skills" id="skills">
+    <div data-aos="flip-left" className="skills" id="skills">
       <div className="skills-style container">
         <div className="skills-header">
           <p>Capability</p>
