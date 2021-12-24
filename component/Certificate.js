@@ -27,7 +27,7 @@ export default function Certificate() {
             <div
               className="certificate-image"
               style={{
-                backgroundImage: "url('/img/sertifikat_dicoding.jpg')",
+                backgroundImage: "url('/img/sertifikat_dicoding.JPG')",
               }}
             ></div>
             <div className="certificate-description">

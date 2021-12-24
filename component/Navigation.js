@@ -28,6 +28,11 @@ export default function Navigation() {
               </Link>
             </div>
             <div className="navigation-button">
+              <Link to="certificate" smooth={true} duration={800}>
+                Certificate
+              </Link>
+            </div>
+            <div className="navigation-button">
               <Link to="language" smooth={true} duration={800}>
                 Language
               </Link>
@@ -66,6 +71,16 @@ export default function Navigation() {
                 onClick={() => displayMenu()}
               >
                 Capability
+              </Link>
+            </div>
+            <div className="mobile-navigation-button">
+              <Link
+                to="certificate"
+                smooth={true}
+                duration={800}
+                onClick={() => displayMenu()}
+              >
+                Certificate
               </Link>
             </div>
             <div className="mobile-navigation-button">
