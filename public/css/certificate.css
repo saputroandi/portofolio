@@ -1,0 +1,55 @@
+.certificate {
+  display: flex;
+  align-items: center;
+}
+
+.certificate-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-bottom: 1.25rem;
+  gap: 2rem;
+  background-color: var(--grey);
+  box-shadow: var(--box-shadow-small);
+  border-radius: 0.3rem;
+}
+
+.certificate-content-header {
+  font-size: 2em;
+  font-weight: var(--semi-bold);
+}
+
+.certificate-container {
+  display: flex;
+  background-color: var(--light-grey);
+  width: 100%;
+  gap: 0.5rem;
+  overflow: auto;
+  padding: 0.5rem;
+}
+
+.certificate-image {
+  background-image: url('../../public/img/sertifikat_udemy.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 20rem;
+  width: 25rem;
+}
+
+.certificate-description {
+  text-align: center;
+  font-weight: var(--semi-bold);
+  font-size: 1.2em;
+}
+
+@media only screen and (min-width: 768px) {
+  .certificate-container {
+    justify-content: center;
+  }
+}

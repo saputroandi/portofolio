@@ -35,6 +35,7 @@ export default function Skills() {
             <p className="skills-content-data">Bootstrap</p>
             <p className="skills-content-data">Material UI</p>
             <p className="skills-content-data">TailwindCSS</p>
+            <p className="skills-content-data">Bootstrap</p>
           </div>
           <div className="skills-data">
             <p className="skills-headers-data">DBMS: </p>
