@@ -3,8 +3,11 @@ import { Bar } from 'react-chartjs-2';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useTranslation } from 'react-i18next';
 
 export default function Language({ repos }) {
+  const { t } = useTranslation();
+
   // reduce languages data from github
   const languages = repos.map((repo) => repo.language);
   const chartData = languages.reduce(
@@ -48,7 +51,7 @@ export default function Language({ repos }) {
     <div data-aos="flip-left" className="language" id="language">
       <div className="language-style container">
         <div className="language-content-header">
-          <p>Language</p>
+          <p>{t('programmingLanguage.title')}</p>
         </div>
 
         <div className="language-content">
@@ -65,7 +68,7 @@ export default function Language({ repos }) {
           />
         </div>
         <div>
-          <p>The language i use, based on my Github repo</p>
+          <p>{t('programmingLanguage.desc')}</p>
         </div>
       </div>
     </div>

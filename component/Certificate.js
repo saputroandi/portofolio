@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useTranslation } from 'react-i18next';
 
 export default function Certificate() {
+  const { t } = useTranslation();
+
   useEffect(() => {
     AOS.init({ duration: 500 });
   }, []);
@@ -11,7 +14,7 @@ export default function Certificate() {
     <div data-aos="flip-right" className="certificate" id="certificate">
       <div className="certificate-style container">
         <div className="certificate-content-header">
-          <p>Certificate</p>
+          <p>{t('certificate.title')}</p>
         </div>
         <div className="certificate-container">
           <div className="certificate-content">
@@ -21,7 +24,9 @@ export default function Certificate() {
                 backgroundImage: "url('/img/sertifikat_udemy.jpg')",
               }}
             ></div>
-            <div className="certificate-description">Serifikat kelas java</div>
+            <div className="certificate-description">
+              Udemy certificate for Java
+            </div>
           </div>
           <div className="certificate-content">
             <div
@@ -31,7 +36,7 @@ export default function Certificate() {
               }}
             ></div>
             <div className="certificate-description">
-              sertifikat kelas javascript
+              Dicoding certificate for Javascript
             </div>
           </div>
         </div>

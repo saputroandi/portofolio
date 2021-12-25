@@ -1,12 +1,34 @@
 import { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import { Link } from 'react-scroll';
+import { useTranslation } from 'react-i18next';
+
+const options = [
+  {
+    label: 'Bahasa',
+    value: 'id',
+  },
+  {
+    label: 'English',
+    value: 'en',
+  },
+];
 
 export default function Navigation() {
+  const { t, i18n } = useTranslation();
   const [mobileMenu, setMobileMenu] = useState(false);
+  const [language, setLanguage] = useState('id');
 
   const displayMenu = () => {
     setMobileMenu(!mobileMenu);
+  };
+
+  const changeLanguage = (e) => {
+    if (i18n.language !== e.target.value) {
+      i18n.changeLanguage(e.target.value);
+      setLanguage(e.target.value);
+      setMobileMenu(!mobileMenu);
+    }
   };
 
   return (
@@ -17,6 +39,19 @@ export default function Navigation() {
             <p>Andi</p>
           </div>
           <div className="navigation-list">
+            <div className="navigation-option">
+              <select
+                name="language"
+                defaultValue={language}
+                onChange={(e) => changeLanguage(e)}
+              >
+                {options.map((option) => (
+                  <option key={option.value} value={option.value}>
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+            </div>
             <div className="navigation-button">
               <Link to="biograph" smooth={true} duration={800}>
                 Biograph
@@ -92,6 +127,19 @@ export default function Navigation() {
               >
                 Language
               </Link>
+            </div>
+            <div className="mobile-navigation-option">
+              <select
+                name="language"
+                defaultValue={language}
+                onChange={(e) => changeLanguage(e)}
+              >
+                {options.map((option) => (
+                  <option key={option.value} value={option.value}>
+                    {option.label}
+                  </option>
+                ))}
+              </select>
             </div>
           </div>
         </div>

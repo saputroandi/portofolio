@@ -21,6 +21,7 @@
 .language-content-header {
   font-size: 2em;
   font-weight: var(--semi-bold);
+  text-align: center;
 }
 
 .language-content {
