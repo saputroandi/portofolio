@@ -11,7 +11,7 @@ export default function Certificate() {
   }, []);
 
   return (
-    <div data-aos="flip-right" className="certificate" id="certificate">
+    <div data-aos="flip-left" className="certificate" id="certificate">
       <div className="certificate-style container">
         <div className="certificate-content-header">
           <p>{t('certificate.title')}</p>

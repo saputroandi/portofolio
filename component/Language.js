@@ -48,7 +48,7 @@ export default function Language({ repos }) {
   }, []);
 
   return (
-    <div data-aos="flip-left" className="language" id="language">
+    <div data-aos="flip-right" className="language" id="language">
       <div className="language-style container">
         <div className="language-content-header">
           <p>{t('programmingLanguage.title')}</p>

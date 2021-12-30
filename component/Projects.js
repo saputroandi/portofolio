@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Projects() {
+  useEffect(() => {
+    AOS.init({ duration: 500 });
+  }, []);
+
   return (
-    <div className="projects" id="projects">
+    <div data-aos="flip-right" className="projects" id="projects">
       <div className="projects-style container">
         <div className="projects-content-header">
           <p>Projects</p>
