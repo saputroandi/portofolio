@@ -1,8 +1,8 @@
-import React from 'react';
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useTranslation } from 'react-i18next';
+import React from "react";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useTranslation } from "react-i18next";
 
 export default function Skills() {
   const { t } = useTranslation();
@@ -15,26 +15,26 @@ export default function Skills() {
     <div data-aos="flip-left" className="skills" id="skills">
       <div className="skills-style container">
         <div className="skills-header">
-          <p>{t('capability.title')}</p>
+          <p>{t("capability.title")}</p>
         </div>
         <div className="skills-content">
           <div className="skills-data">
             <p className="skills-headers-data">
-              {t('capability.subTitle.skillsInterest')}:
+              {t("capability.subTitle.skillsInterest")}:
             </p>
             <p className="skills-content-data">Back-End Development</p>
             <p className="skills-content-data">Front-End Development</p>
           </div>
           <div className="skills-data">
             <p className="skills-headers-data">
-              {t('capability.subTitle.programmingLanguages')}:
+              {t("capability.subTitle.programmingLanguages")}:
             </p>
             <p className="skills-content-data">JavaScript</p>
             <p className="skills-content-data">PHP</p>
           </div>
           <div className="skills-data">
             <p className="skills-headers-data">
-              {t('capability.subTitle.libraryFrameworks')}:
+              {t("capability.subTitle.libraryFrameworks")}:
             </p>
             <p className="skills-content-data">Node Js</p>
             <p className="skills-content-data">Express Js</p>
@@ -48,14 +48,15 @@ export default function Skills() {
           </div>
           <div className="skills-data">
             <p className="skills-headers-data">
-              {t('capability.subTitle.dbms')}:
+              {t("capability.subTitle.dbms")}:
             </p>
             <p className="skills-content-data">MySQL</p>
           </div>
           <div className="skills-data">
             <p className="skills-headers-data">
-              {t('capability.subTitle.other')}:
+              {t("capability.subTitle.other")}:
             </p>
+            <p className="skills-content-data">Docker</p>
             <p className="skills-content-data">Linux</p>
           </div>
         </div>
