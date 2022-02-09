@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Projects() {
   useEffect(() => {
@@ -8,7 +8,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div data-aos="flip-right" className="projects" id="projects">
+    <section data-aos="flip-right" className="projects" id="projects">
       <div className="projects-style container">
         <div className="projects-content-header">
           <p>Projects</p>
@@ -24,13 +24,31 @@ export default function Projects() {
             <div className="projects-description">
               <p>
                 Teman Bahasa merupakan sebuah layanan translator otomatis multi
-                kalimat untuk Bahasa Daerah yang ada di Indonesia. klik{' '}
+                kalimat untuk Bahasa Daerah yang ada di Indonesia. klik{" "}
                 <a href="https://temanbahasa.id/">disini</a> untuk melihatnya
+              </p>
+            </div>
+          </div>
+          <div className="projects-content">
+            <div
+              className="projects-image"
+              style={{
+                backgroundImage: "url('/img/product-page.jpg')",
+              }}
+            ></div>
+            <div className="projects-description">
+              <p>
+                Proyek tantangan dari frontendmentor.io untuk membuat halaman
+                product page. Saya menggunakan NextJs dan CSS3 dalam
+                pengerjaannya, dan juga React Context untuk mengolah state
+                management cart nya. klik{" "}
+                <a href="https://product-page.andisaputro.online/">disini</a>{" "}
+                untuk melihatnya
               </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

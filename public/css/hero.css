@@ -18,7 +18,7 @@
   border-radius: 50%;
   width: 15.625rem;
   height: 15.625rem;
-  background-image: url('../../public/img/profil.JPG');
+  background-image: url("../../public/img/andi_s.jpg");
   background-position: center;
   background-size: cover;
   box-shadow: var(--box-shadow-small);
@@ -63,28 +63,28 @@
 }
 
 .hero-icon-phone {
-  background-image: url('../../public/img/telephone.png');
+  background-image: url("../../public/img/telephone.png");
   width: 1.2rem;
   height: 1.2rem;
   background-size: cover;
 }
 
 .hero-icon-email {
-  background-image: url('../../public/img/email.png');
+  background-image: url("../../public/img/email.png");
   width: 1.2rem;
   height: 1.2rem;
   background-size: cover;
 }
 
 .hero-icon-github {
-  background-image: url('../../public/img/github.png');
+  background-image: url("../../public/img/github.png");
   width: 1.2rem;
   height: 1.2rem;
   background-size: cover;
 }
 
 .hero-icon-telegram {
-  background-image: url('../../public/img/telegram.png');
+  background-image: url("../../public/img/telegram.png");
   width: 1.2rem;
   height: 1.2rem;
   background-size: cover;
@@ -111,6 +111,7 @@
 
   .hero-contact-container {
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-around; */
+    gap: 2.5rem;
   }
 }

@@ -1,11 +1,11 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
+import React from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Hero() {
   const { t } = useTranslation();
 
   return (
-    <div className="hero">
+    <section className="hero">
       <div className="hero-style container">
         <div className="hero-profile">
           <div className="hero-image"></div>
@@ -19,7 +19,7 @@ export default function Hero() {
               <p>Web Dev</p>
             </div>
             <div className="hero-current-position">
-              <p>{t('hero.currentWork')}</p>
+              <p>{t("hero.currentWork")}</p>
             </div>
           </div>
           <div className="hero-contact-container">
@@ -54,6 +54,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

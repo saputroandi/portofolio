@@ -16,11 +16,11 @@
   opacity: 0;
 }
 
-@keyframes cloud-animation {
+/* @keyframes cloud-animation {
   from {
     right: -100%;
   }
   to {
     right: 100%;
   }
-}
+} */

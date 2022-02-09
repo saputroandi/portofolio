@@ -12,7 +12,7 @@ export default function Skills() {
   }, []);
 
   return (
-    <div data-aos="flip-left" className="skills" id="skills">
+    <section data-aos="flip-left" className="skills" id="skills">
       <div className="skills-style container">
         <div className="skills-header">
           <p>{t("capability.title")}</p>
@@ -61,6 +61,6 @@ export default function Skills() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

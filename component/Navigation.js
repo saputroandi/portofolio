@@ -1,23 +1,23 @@
-import { useState } from 'react';
-import { CSSTransition } from 'react-transition-group';
-import { Link } from 'react-scroll';
-import { useTranslation } from 'react-i18next';
+import { useState } from "react";
+import { CSSTransition } from "react-transition-group";
+import { Link } from "react-scroll";
+import { useTranslation } from "react-i18next";
 
 const options = [
   {
-    label: 'Bahasa',
-    value: 'id',
+    label: "Bahasa",
+    value: "id",
   },
   {
-    label: 'English',
-    value: 'en',
+    label: "English",
+    value: "en",
   },
 ];
 
 export default function Navigation() {
   const { t, i18n } = useTranslation();
   const [mobileMenu, setMobileMenu] = useState(false);
-  const [language, setLanguage] = useState('id');
+  const [language, setLanguage] = useState("en");
 
   const displayMenu = () => {
     setMobileMenu(!mobileMenu);
@@ -32,7 +32,7 @@ export default function Navigation() {
   };
 
   return (
-    <div className="navigation">
+    <nav className="navigation">
       <div className="navigation-style container">
         <div className="navigation-container">
           <div className="navigation-name">
@@ -159,6 +159,6 @@ export default function Navigation() {
           </div>
         </div>
       </CSSTransition>
-    </div>
+    </nav>
   );
 }

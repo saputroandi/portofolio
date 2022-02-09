@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useTranslation } from 'react-i18next';
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useTranslation } from "react-i18next";
 
 export default function Certificate() {
   const { t } = useTranslation();
@@ -11,10 +11,10 @@ export default function Certificate() {
   }, []);
 
   return (
-    <div data-aos="flip-left" className="certificate" id="certificate">
+    <section data-aos="flip-left" className="certificate" id="certificate">
       <div className="certificate-style container">
         <div className="certificate-content-header">
-          <p>{t('certificate.title')}</p>
+          <p>{t("certificate.title")}</p>
         </div>
         <div className="certificate-container">
           <div className="certificate-content">
@@ -41,6 +41,6 @@ export default function Certificate() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

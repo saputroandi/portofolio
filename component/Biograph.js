@@ -1,8 +1,8 @@
-import React from 'react';
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useTranslation } from 'react-i18next';
+import React from "react";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useTranslation } from "react-i18next";
 
 export default function Biograph() {
   useEffect(() => {
@@ -12,30 +12,30 @@ export default function Biograph() {
   const { t } = useTranslation();
 
   return (
-    <div data-aos="flip-right" className="biograph" id="biograph">
+    <section data-aos="flip-right" className="biograph" id="biograph">
       <div className="biograph-style container">
         <div className="biograph-content-header">
-          <p>{t('biograph.title')}</p>
+          <p>{t("biograph.title")}</p>
         </div>
         <div className="biograph-content">
           <p>
             <span></span>
-            {t('biograph.description.paragraph_1')}
+            {t("biograph.description.paragraph_1")}
           </p>
         </div>
         <div className="biograph-content">
           <p>
             <span></span>
-            {t('biograph.description.paragraph_2')}
+            {t("biograph.description.paragraph_2")}
           </p>
         </div>
         <div className="biograph-content">
           <p>
             <span></span>
-            {t('biograph.description.paragraph_3')}
+            {t("biograph.description.paragraph_3")}
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

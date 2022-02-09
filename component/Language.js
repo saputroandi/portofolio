@@ -1,9 +1,9 @@
-import React from 'react';
-import { Bar } from 'react-chartjs-2';
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useTranslation } from 'react-i18next';
+import React from "react";
+import { Bar } from "react-chartjs-2";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useTranslation } from "react-i18next";
 
 export default function Language({ repos }) {
   const { t } = useTranslation();
@@ -12,7 +12,7 @@ export default function Language({ repos }) {
   const languages = repos.map((repo) => repo.language);
   const chartData = languages.reduce(
     (accLanguages, currentLanguages, index) => {
-      if (!currentLanguages) currentLanguages = 'Other';
+      if (!currentLanguages) currentLanguages = "Other";
 
       let language = accLanguages.some((obj) => obj.x === currentLanguages);
 
@@ -36,8 +36,8 @@ export default function Language({ repos }) {
       {
         label: `The language I use`,
         data: chartData,
-        backgroundColor: 'rgba(17, 50, 77, 0.8)',
-        borderColor: 'rgba(17, 50, 77, 1)',
+        backgroundColor: "rgba(17, 50, 77, 0.8)",
+        borderColor: "rgba(17, 50, 77, 1)",
         borderWidth: 1,
       },
     ],
@@ -48,10 +48,10 @@ export default function Language({ repos }) {
   }, []);
 
   return (
-    <div data-aos="flip-right" className="language" id="language">
+    <section data-aos="flip-right" className="language" id="language">
       <div className="language-style container">
         <div className="language-content-header">
-          <p>{t('programmingLanguage.title')}</p>
+          <p>{t("programmingLanguage.title")}</p>
         </div>
 
         <div className="language-content">
@@ -68,9 +68,9 @@ export default function Language({ repos }) {
           />
         </div>
         <div>
-          <p>{t('programmingLanguage.desc')}</p>
+          <p>{t("programmingLanguage.desc")}</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
