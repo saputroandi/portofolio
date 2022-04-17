@@ -16,9 +16,9 @@
 .hero-image {
   margin: 3rem;
   border-radius: 50%;
-  width: 15.625rem;
-  height: 15.625rem;
-  background-image: url("../../public/img/andi_s.jpg");
+  width: 17rem;
+  height: 17rem;
+  background-image: url("../../public/img/andiss.jpg");
   background-position: center;
   background-size: cover;
   box-shadow: var(--box-shadow-small);

@@ -40,10 +40,27 @@ export default function Projects() {
               <p>
                 Proyek tantangan dari frontendmentor.io untuk membuat halaman
                 product page. Saya menggunakan NextJs dan CSS3 dalam
-                pengerjaannya, dan juga React Context untuk mengolah state
-                management cart nya. klik{" "}
+                pengerjaannya, dan juga React Context untuk state management
+                cart nya. klik{" "}
                 <a href="https://product-page.andisaputro.online/">disini</a>{" "}
                 untuk melihatnya
+              </p>
+            </div>
+          </div>
+          <div className="projects-content">
+            <div
+              className="projects-image"
+              style={{
+                backgroundImage: "url('/img/api-tester.png')",
+              }}
+            ></div>
+            <div className="projects-description">
+              <p>
+                Proyek ini saya buat untuk saya sendiri agar mempermudah saya
+                dalam mencoba endpoint yg saya buat. Saya menggunakan NextJs
+                dalam pengerjaannya. klik{" "}
+                <a href="https://api-tester.andisaputro.online/">disini</a>{" "}
+                untuk mencobanya.
               </p>
             </div>
           </div>

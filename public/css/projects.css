@@ -50,3 +50,13 @@
   color: blue;
   text-decoration: underline;
 }
+
+@media only screen and (min-width: 768px) {
+  .projects-container {
+    justify-content: center;
+  }
+
+  .projects-content {
+    width: 28rem;
+  }
+}

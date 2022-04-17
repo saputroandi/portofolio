@@ -52,7 +52,6 @@ i18n.use(initReactI18next).init({
           title: "Capability",
           subTitle: {
             skillsInterest: "Skills and Interest",
-            programmingLanguages: "Programming Languages",
             libraryFrameworks: "Library and Frameworks",
             dbms: "DBMS",
             other: "Other",
