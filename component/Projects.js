@@ -18,21 +18,6 @@ export default function Projects() {
             <div
               className="projects-image"
               style={{
-                backgroundImage: "url('/img/project_temanbahasa.JPG')",
-              }}
-            ></div>
-            <div className="projects-description">
-              <p>
-                Teman Bahasa merupakan sebuah layanan translator otomatis multi
-                kalimat untuk Bahasa Daerah yang ada di Indonesia. klik{" "}
-                <a href="https://temanbahasa.id/">disini</a> untuk melihatnya
-              </p>
-            </div>
-          </div>
-          <div className="projects-content">
-            <div
-              className="projects-image"
-              style={{
                 backgroundImage: "url('/img/product-page.jpg')",
               }}
             ></div>
@@ -42,7 +27,18 @@ export default function Projects() {
                 product page. Saya menggunakan NextJs dan CSS3 dalam
                 pengerjaannya, dan juga React Context untuk state management
                 cart nya. klik{" "}
-                <a href="https://product-page.andisaputro.online/">disini</a>{" "}
+                <a
+                  // href="https://product-page-andis.vercel.app/"
+                  onClick={() =>
+                    window.open(
+                      "https://product-page-andis.vercel.app/",
+                      "_blank",
+                      "noopener,noreferrer"
+                    )
+                  }
+                >
+                  disini
+                </a>{" "}
                 untuk melihatnya
               </p>
             </div>
@@ -59,8 +55,47 @@ export default function Projects() {
                 Proyek ini saya buat untuk saya sendiri agar mempermudah saya
                 dalam mencoba endpoint yg saya buat. Saya menggunakan NextJs
                 dalam pengerjaannya. klik{" "}
-                <a href="https://api-tester.andisaputro.online/">disini</a>{" "}
+                <a
+                  // href="https://api-tester-andis.vercel.app/"
+                  onClick={() =>
+                    window.open(
+                      "https://api-tester-andis.vercel.app/",
+                      "_blank",
+                      "noopener,noreferrer"
+                    )
+                  }
+                >
+                  disini
+                </a>{" "}
                 untuk mencobanya.
+              </p>
+            </div>
+          </div>
+          <div className="projects-content">
+            <div
+              className="projects-image"
+              style={{
+                backgroundImage: "url('/img/undangan.png')",
+              }}
+            ></div>
+            <div className="projects-description">
+              <p>
+                Ini adalah undangan berbasis website dan salah satu tema-nya
+                yang saya bangun menggunakan NextJs, CSS3 dan Sanity sebagai
+                tempat menyimpan ucapan dati tamu undangan. Klik{" "}
+                <a
+                  // href="https://undangan-andis.vercel.app/"
+                  onClick={() =>
+                    window.open(
+                      "https://undangan-andis.vercel.app/",
+                      "_blank",
+                      "noopener,noreferrer"
+                    )
+                  }
+                >
+                  disini
+                </a>{" "}
+                untuk melihatnya
               </p>
             </div>
           </div>

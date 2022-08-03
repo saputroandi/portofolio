@@ -25,7 +25,7 @@ export default function Hero() {
           <div className="hero-contact-container">
             <div className="hero-contact">
               <div className="hero-icon-phone"></div>
-              <p>+62 817-7658-6850</p>
+              <p>+62 815-7483-2133</p>
             </div>
             <div className="hero-contact">
               <div className="hero-icon-email"></div>
