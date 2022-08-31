@@ -40,11 +40,11 @@ export default function Home({ repos }) {
 
         <meta
           property="og:image"
-          content="https://andisaputro.online/img/reactjs.jpeg"
+          content="https://andisaputro.website/img/reactjs.jpeg"
         />
         <meta
           name="twitter:image"
-          content="https://andisaputro.online/img/reactjs.jpeg"
+          content="https://andisaputro.website/img/reactjs.jpeg"
         />
 
         <link rel="icon" href="/img/icon.jpeg" />
